@@ -142,7 +142,6 @@ def extract_images(pdf_path):
 
 
 if __name__ == "__main__":
-    #pytesseract.pytesseract.tesseract_cmd = r"C:/Users/vinay/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0/LocalCache/local-packages/Python310/site-packages/Tesseract-OCR/tesseract.exe"
     pytesseract.pytesseract.tesseract_cmd = "Tesseract-OCR/tesseract.exe"
     start = time.perf_counter()
     print("Program start: ", start)
@@ -184,8 +183,7 @@ if __name__ == "__main__":
         for color_name, similarity_percentage in similarity_results.items():
             print(f"Similarity for {color_name} highlights: {similarity_percentage*100:.2f}%")
             st.write(f"Similarity for {color_name} highlights: {similarity_percentage*100:.2f}%")
-        # st.image(page, caption="This is my image")
-    
+   
 
 
     end = time.perf_counter()
