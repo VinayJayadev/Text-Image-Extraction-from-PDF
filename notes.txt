@@ -1,0 +1,7 @@
+This file contains notes taking from "The Dynamics of Power Grids"
+
+red: Electricity is distributed to residences via power networks.
+
+yellow: Electricity travel distances by train.
+
+blue: sigma represent change and delta denote summation.

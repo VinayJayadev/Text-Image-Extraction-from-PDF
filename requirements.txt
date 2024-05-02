@@ -1,0 +1,11 @@
+PyPDF2
+pymupdf
+pytesseract 
+Pillow
+tensorflow
+torch
+opencv-python
+transformers
+streamlit
+sentence-transformers
+scikit-learn
