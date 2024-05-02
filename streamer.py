@@ -142,6 +142,7 @@ def extract_images(pdf_path):
 
 
 if __name__ == "__main__":
+ try:
     pytesseract.pytesseract.tesseract_cmd = "Tesseract-OCR/tesseract.exe"
     start = time.perf_counter()
     print("Program start: ", start)
@@ -152,10 +153,9 @@ if __name__ == "__main__":
                     layout='centered',
                     initial_sidebar_state='collapsed')
     st.header("Text Extraction ")
-    col1,col2 = st.columns([10,10])
-
+    
     #For upload option from Streamlit UI
-
+    #col1,col2 = st.columns([10,10])
     ##with col1:
     ##    pdf_f"ile = st.file_uploader("Upload PDF file", type="pdf", key=1)
 
@@ -184,7 +184,8 @@ if __name__ == "__main__":
             print(f"Similarity for {color_name} highlights: {similarity_percentage*100:.2f}%")
             st.write(f"Similarity for {color_name} highlights: {similarity_percentage*100:.2f}%")
    
-
+ except Exception as e:
+     print(str(e))
 
     end = time.perf_counter()
     print("Program end: ", end)
